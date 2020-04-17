@@ -52,15 +52,15 @@ Core library dependencies:
 ### Vendored dependencies ###
 The following dependencies are included and build together with the project:
 
- * Brisk
- * CameraDrivers
- * DBoW2
- * Eigen
- * GTSAM
- * OpenGV
- * Pangolin
- * Sophus
- * VisionCore
+ * [Brisk](https://wp.doc.ic.ac.uk/sleutene/software)
+ * [CameraDrivers](https://github.com/lukier/camera_drivers)
+ * [DBoW2](https://github.com/dorian3d/DBoW2)
+ * [Eigen](https://gitlab.com/libeigen/eigen)
+ * [GTSAM](https://github.com/borglab/gtsam)
+ * [OpenGV](https://github.com/laurentkneip/opengv)
+ * [Pangolin](https://github.com/stevenlovegrove/Pangolin) (we use our own fork)
+ * [Sophus](https://github.com/strasdat/Sophus)
+ * [VisionCore](https://github.com/lukier/vision_core)
 
 ## Getting Started ##
 ### Get the code
