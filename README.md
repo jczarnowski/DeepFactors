@@ -203,10 +203,18 @@ the estimated trajectory in the TUM format, saved keyframes, debug images and
 parameters used to run the system.
 
 ## Acknowledgements
-Open source release contributors:
+Paper authors:
   * [Jan Czarnowski](https://github.com/jczarnowski)
-  * [Raluca Scona](https://github.com/raluca-scona)
+  * [Tristan Laidlow](https://scholar.google.com/citations?user=bmOi48IAAAAJ&hl=en)
+  * [Ronald Clark](http://www.ronnieclark.co.uk)
+  * [Andrew Davison](https://www.doc.ic.ac.uk/~ajd)
+
+System Implementation:
+  * [Jan Czarnowski](https://github.com/jczarnowski)
+
+Testing/Bug Fixes for the open source release:
   * [Hidenobu Matsuki](https://github.com/muskie82)
+  * [Raluca Scona](https://github.com/raluca-scona)
 
 ## Citation
 
