@@ -1,0 +1,8 @@
+########## INCLUDES ##########
+--flagfile=data/flags/common.flags
+--flagfile=data/flags/alg_odom.flags
+
+########## DATASET SPECIFIC ##########
+-interleave_mapping=false
+-init_on_start=true
+-quit_on_finish=true

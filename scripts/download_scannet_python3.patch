@@ -1,0 +1,41 @@
+--- download-scannet.py	2020-04-17 11:00:45.519845019 +0100
++++ download-scannet_new.py	2020-04-17 09:48:01.463398406 +0100
+@@ -4,8 +4,7 @@
+ # -*- coding: utf-8 -*-
+ import argparse
+ import os
+-#import urllib.request (for python3)
+-import urllib
++import urllib.request
+ import tempfile
+ 
+ BASE_URL = 'http://dovahkiin.stanford.edu/scannet-public/'
+@@ -27,8 +26,7 @@
+ 
+ 
+ def get_release_scans(release_file):
+-    #scan_lines = urllib.request.urlopen(release_file)
+-    scan_lines = urllib.urlopen(release_file)
++    scan_lines = urllib.request.urlopen(release_file)
+     scans = []
+     for scan_line in scan_lines:
+         scan_id = scan_line.decode('utf8').rstrip('\n')
+@@ -55,8 +53,7 @@
+         fh, out_file_tmp = tempfile.mkstemp(dir=out_dir)
+         f = os.fdopen(fh, 'w')
+         f.close()
+-        #urllib.request.urlretrieve(url, out_file_tmp)
+-        urllib.urlretrieve(url, out_file_tmp)
++        urllib.request.urlretrieve(url, out_file_tmp)
+         os.rename(out_file_tmp, out_file)
+     else:
+         print('WARNING: skipping download of existing file ' + out_file)
+@@ -119,7 +116,7 @@
+     print(TOS_URL)
+     print('***')
+     print('Press any key to continue, or CTRL-C to exit.')
+-    key = raw_input('')
++    key = input('')
+ 
+     if args.v1:
+         global RELEASE

@@ -1,0 +1,21 @@
+{
+  "cameras": {
+      "scenenet": [277.12, 289.70, 160.0, 120.0]
+  },
+
+  "sequences": {
+      "scenenet_0": {
+          "base_dir": "data/testimg",
+          "images": ["0.jpg", "25.jpg"],
+          "depth_images": ["0.png", "25.png"], 
+          "camera": "scenenet"
+      },
+
+      "scenenet_1": {
+          "base_dir": "data/testimg",
+          "images": ["1047.jpg", "1052.jpg"],
+          "depth_images": ["1047.png", "1052.png"], 
+          "camera": "scenenet"
+      }
+  }
+}

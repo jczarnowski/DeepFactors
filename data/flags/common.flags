@@ -1,0 +1,41 @@
+########### NETWORK  #############
+-network_path=data/nets/scannet256_32.cfg
+-predict_code=true
+
+########### ALGORITHM  #############
+-vocab_path=data/voc/small_voc.yml.gz
+
+# coarse to fine iterations
+-tracking_iters=5,5,10
+-pho_iters=4,8,15
+
+# photometric error
+-use_photometric=true
+-huber_delta=0.1
+-normalize_image=false
+
+# reprojection error
+-use_reprojection=true
+-rep_nfeatures=500
+-rep_scale_factor=1.2
+-rep_nlevels=1
+-rep_max_dist=50
+-rep_huber=4
+-rep_iters=15
+-rep_sigma=1.0
+-rep_ransac_maxiters=10000
+-rep_ransac_threshold=0.000001
+
+# geometric error
+-use_geometric=false
+-geo_npoints=3000
+-geo_stochastic=false
+-geo_huber=0.1
+-geo_iters=15
+
+# loop closure
+-loop_closure=true
+-loop_max_dist=0.1
+-loop_min_similarity=0.4
+-loop_detection_freq=10
+-loop_active_window=10

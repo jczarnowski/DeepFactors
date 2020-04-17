@@ -1,0 +1,24 @@
+# keyframing options
+-keyframe_mode=NEVER
+
+# connection options
+-connection_mode=LAST
+-max_back_connections=4
+
+# tracking options
+-tracking_mode=LAST
+-tracking_huber_delta=0.1
+-tracking_dist_threshold=3
+-tracking_error_threshold=0.5
+
+# init/visualize
+-init_type=ONEFRAME
+-vis_mode=ALL
+
+# mapping parameters
+-pose_prior=0.1
+-code_prior=5
+-partial_relin_check=false
+-relinearize_threshold=0.01
+
+-loop_closure=true

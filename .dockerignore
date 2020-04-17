@@ -1,0 +1,15 @@
+# hidden files and dirs
+.gitignore
+.git/
+.idea/
+.vscode/
+*.user
+
+*.zip
+
+# build directory
+build
+thirdparty/build
+thirdparty/install
+
+isam_graph*

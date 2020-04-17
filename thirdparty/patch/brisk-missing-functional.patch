@@ -1,0 +1,10 @@
+--- brisk/src/brisk-feature-detector.cc	2020-03-26 18:25:39.743655315 +0000
++++ brisk/src/brisk-feature-detector.cc_fixed	2020-03-26 18:26:11.330322280 +0000
+@@ -44,6 +44,7 @@
+  */
+ 
+ #include <algorithm>
++#include <functional>
+ #include <stdexcept>
+ 
+ #include <brisk/brisk-feature-detector.h>

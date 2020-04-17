@@ -1,0 +1,27 @@
+[submodule "thirdparty/Sophus"]
+	path = thirdparty/Sophus
+	url = https://github.com/strasdat/Sophus
+[submodule "thirdparty/camera_drivers"]
+	path = thirdparty/camera_drivers
+	url = https://github.com/lukier/camera_drivers
+[submodule "thirdparty/DBoW2"]
+	path = thirdparty/DBoW2
+	url = https://github.com/dorian3d/DBoW2
+[submodule "thirdparty/vision_core"]
+	path = thirdparty/vision_core
+	url = https://github.com/jczarnowski/vision_core
+[submodule "thirdparty/gtsam"]
+	path = thirdparty/gtsam
+	url = https://github.com/borglab/gtsam
+[submodule "tests/googletest"]
+	path = tests/googletest
+	url = https://github.com/google/googletest
+[submodule "thirdparty/Pangolin"]
+	path = thirdparty/Pangolin
+	url = https://github.com/jczarnowski/Pangolin
+[submodule "thirdparty/opengv"]
+	path = thirdparty/opengv
+	url = https://github.com/laurentkneip/opengv
+[submodule "thirdparty/eigen"]
+	path = thirdparty/eigen
+	url = https://gitlab.com/libeigen/eigen

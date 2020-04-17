@@ -1,0 +1,25 @@
+# IDE projects
+*.kdev4
+*.user
+*.idea
+
+__pycache__
+
+# networks
+*.cfg
+*.pb
+
+# third party
+*.tar.gz
+thirdparty/brisk*
+thirdparty/bazel*
+thirdparty/install
+
+# generated files
+build
+results
+live_results
+*.dot
+download
+
+scripts/download-scannet.py

@@ -1,0 +1,3 @@
+########## INCLUDES ##########
+--flagfile=data/flags/common.flags
+--flagfile=data/flags/alg_refine.flags

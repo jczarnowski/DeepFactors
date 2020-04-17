@@ -1,0 +1,15 @@
+--- brisk/src/demo-free.cc	2020-03-26 18:37:13.866995120 +0000
++++ brisk/src/demo-free_new.cc	2019-07-18 14:05:47.733377625 +0100
+@@ -102,10 +102,10 @@
+ 
+   // Convert to grayscale.
+   cv::Mat imgGray1;
+-  cv::cvtColor(imgRGB1, imgGray1, CV_BGR2GRAY);
++  cv::cvtColor(imgRGB1, imgGray1, cv::COLOR_BGR2GRAY);
+   cv::Mat imgGray2;
+   if (!do_rot) {
+-    cv::cvtColor(imgRGB2, imgGray2, CV_BGR2GRAY);
++    cv::cvtColor(imgRGB2, imgGray2, cv::COLOR_BGR2GRAY);
+   }
+ 
+   // Run FAST in first image.
