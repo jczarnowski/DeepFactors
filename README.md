@@ -116,6 +116,11 @@ make
 You can speed up the compilation by using multiple threads e.g. `make -j5`.
 
 ## Running the system
+
+```diff
+! ScanNet servers seem to be down at the moment. It is not possible to download an example trajectory!
+```
+
 First, download the example network trained by the authors:
 ```
 bash scripts/download_network.bash
