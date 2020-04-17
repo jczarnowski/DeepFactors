@@ -202,6 +202,12 @@ system run in a timestamped folder under `results`. That folder will include
 the estimated trajectory in the TUM format, saved keyframes, debug images and
 parameters used to run the system.
 
+## Acknowledgements
+Open source release contributors:
+  * [Jan Czarnowski](https://github.com/jczarnowski)
+  * [Raluca Scona](https://github.com/raluca-scona)
+  * [Hidenobu Matsuki](https://github.com/muskie82)
+
 ## Citation
 
 If you find DeepFactors useful for your research, please cite the paper as: 
