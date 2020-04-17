@@ -203,7 +203,7 @@ the estimated trajectory in the TUM format, saved keyframes, debug images and
 parameters used to run the system.
 
 ## Acknowledgements
-Development:
+Codebase:
   * [Jan Czarnowski](https://github.com/jczarnowski)
 
 Paper authors:
