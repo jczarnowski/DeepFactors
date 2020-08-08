@@ -1,6 +1,13 @@
 FROM nvidia/cuda:10.0-cudnn7-devel
 ARG DEBIAN_FRONTEND=noninteractive
 
+# Add library path
+ENV LD_LIBRARY_PATH ./thirdparty/install/lib:${LD_LIBRARY_PATH}
+
+# Add nvidia driver settings
+ENV NVIDIA_VISIBLE_DEVICES ${NVIDIA_VISIBLE_DEVICES:-all}
+ENV NVIDIA_DRIVER_CAPABILITIES ${NVIDIA_DRIVER_CAPABILITIES:+$NVIDIA_DRIVER_CAPABILITIES,}graphics
+
 # Install system dependencies
 RUN set -x && apt-get update -y && apt-get install -y \
       cmake \
@@ -21,6 +28,9 @@ RUN wget -qO - ${TFAPI_URL} | tar -C /usr/local -xvz
 # Build DeepFactors
 COPY . /DeepFactors
 WORKDIR /DeepFactors
+
+# Download pretrained weight
+RUN set -x && bash ./scripts/download_network.bash
 
 # build deps
 RUN set -x && ./thirdparty/makedeps.sh --threads 2
