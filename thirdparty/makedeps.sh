@@ -139,7 +139,7 @@ function get_brisk()
   if [[ ! -f ${brisk_archive} ]]; then
     echo "Downloading ${brisk_archive}"
     wget https://www.doc.ic.ac.uk/~sleutene/software/${brisk_archive}
-    unzip -u ${brisk_archive}
+    unzip -d brisk -u ${brisk_archive}
 
     # apply patches
     patch -Np1 -d brisk -r - < patch/brisk-missing-functional.patch
