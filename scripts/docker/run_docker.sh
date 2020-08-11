@@ -1,5 +1,5 @@
 xhost +local:
-sudo docker run -it \
+docker run -it \
     --rm \
     --runtime=nvidia \
     -v /home/$(id --user --name):/home/$(id --user --name) \
