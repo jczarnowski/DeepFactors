@@ -7,5 +7,5 @@ if [[ ! -d ${WEIGHT_PATH} ]]; then
   mkdir -p ${WEIGHT_PATH}
   wget -qO - ${URL} | tar xvz -C ${WEIGHT_PATH}
 else
-  echo "Pretrained weights already exists in ${WEIGHT_PATH}!"
+  echo "Pretrained weights have already exist in ${WEIGHT_PATH}!"
 fi
