@@ -1,11 +1,13 @@
 #!/bin/bash
 URL="https://www.dropbox.com/s/fj5dfq9hkqv2hm1/scannet256_32.tar.gz"
-WEIGHT_PATH="data/nets"
+DEST_DIR="data/nets"
 
-if [[ ! -d ${WEIGHT_PATH} ]]; then
+if [[ ! -f ${DEST_DIR}/scannet256_32.cfg || 
+      ! -f ${DEST_DIR}/scannet256_32_frozen.pb || 
+      ! -f ${DEST_DIR}/scannet256_32_graphdef.pb ]]; then
   # Download pretrained weights
-  mkdir -p ${WEIGHT_PATH}
-  wget -qO - ${URL} | tar xvz -C ${WEIGHT_PATH}
+  mkdir -p ${DEST_DIR}
+  wget -qO - ${URL} | tar xvz -C ${DEST_DIR}
 else
-  echo "Pretrained weights already exist in ${WEIGHT_PATH}!"
+  echo "The pretrained weights already exist"
 fi
