@@ -1,5 +1,5 @@
 #!/bin/bash
-URL="https://www.dropbox.com/s/fj5dfq9hkqv2hm1/scannet256_32.tar.gz"
+URL="https://drive.google.com/file/d/1CQetOB7yVUl8MZ2_hNBnJh3G4bPGGdr6"
 DEST_DIR="data/nets"
 
 if [[ ! -f ${DEST_DIR}/scannet256_32.cfg || 
